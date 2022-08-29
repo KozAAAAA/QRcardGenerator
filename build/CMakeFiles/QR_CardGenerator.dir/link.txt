@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/QR_CardGenerator.dir/main.cpp.o  -o QR_CardGenerator 
