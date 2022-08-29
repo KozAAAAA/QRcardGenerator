@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/mateusz/Desktop/cpp/QRcardGenerator/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/QR_CardGenerator.dir/main.cpp.o -c /home/mateusz/Desktop/cpp/QRcardGenerator/main.cpp",
+  "command": "/usr/bin/g++    -g   -std=c++17 -o CMakeFiles/QR_CardGenerator.dir/main.cpp.o -c /home/mateusz/Desktop/cpp/QRcardGenerator/main.cpp",
   "file": "/home/mateusz/Desktop/cpp/QRcardGenerator/main.cpp"
 }
 ]

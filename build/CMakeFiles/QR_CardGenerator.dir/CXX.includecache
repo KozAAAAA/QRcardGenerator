@@ -9,4 +9,12 @@
 /home/mateusz/Desktop/cpp/QRcardGenerator/main.cpp
 iostream
 -
+filesystem
+-
+vector
+-
+iterator
+-
+algorithm
+-
 
