@@ -3,10 +3,13 @@
 #include <fstream>
 #include <regex>
 
+
+
 namespace fs = std::filesystem;
 
 int main(int argc, char *argv[])
 {
+    
     const fs::path QRcodes{"files/QRcodes"};
     const fs::path finalFiles{"files/finalFiles"};
     const fs::path baseSVG{"files/baseSVG/baseSVG.svg"};
@@ -46,7 +49,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    std::cout << "Done\n";
+    std::cout << "\033[1;32mDone\033[0m\n";
     std::cout << "Created " << numCreatedFiles << " files.\n";
 
     return 0;
