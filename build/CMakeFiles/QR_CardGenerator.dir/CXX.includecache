@@ -11,10 +11,8 @@ iostream
 -
 filesystem
 -
-vector
+fstream
 -
-iterator
--
-algorithm
+regex
 -
 
