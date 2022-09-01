@@ -305,6 +305,9 @@ GITCOMMAND:FILEPATH=/usr/bin/git
 //Path to a program.
 HGCOMMAND:FILEPATH=HGCOMMAND-NOTFOUND
 
+//Path to a library.
+LUNA_SVG:FILEPATH=/usr/local/lib/liblunasvg.a
+
 //Command to build the project
 MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 

@@ -1,8 +1,15 @@
+#include "stb_image_write.h"
+
 #include <iostream>
 #include <filesystem>
 #include <fstream>
 #include <regex>
 
+#include <lunasvg.h>
+#include <sstream>
+
+
+using namespace lunasvg;
 
 
 namespace fs = std::filesystem;
@@ -51,6 +58,24 @@ int main(int argc, char *argv[])
 
     std::cout << "\033[1;32mDone\033[0m\n";
     std::cout << "Created " << numCreatedFiles << " files.\n";
+
+
+
+    std::string filename = "files/baseSVG/baseSVG.svg";
+    std::uint32_t width = 5, height = 5;
+    std::uint32_t bgColor = 0x00000000;
+
+    auto document = Document::loadFromFile(filename);
+
+    auto bitmap = document->renderToBitmap(width, height, bgColor);
+
+    auto basename = filename.substr(filename.find_last_of("/\\") + 1);
+    basename.append(".png");
+
+    bitmap.convertToRGBA();
+    stbi_write_png(basename.c_str(), int(bitmap.width()), int(bitmap.height()), 4, bitmap.data(), 0);
+
+
 
     return 0;
 }

@@ -79,6 +79,7 @@ QR_CardGenerator_EXTERNAL_OBJECTS =
 
 QR_CardGenerator: CMakeFiles/QR_CardGenerator.dir/main.cpp.o
 QR_CardGenerator: CMakeFiles/QR_CardGenerator.dir/build.make
+QR_CardGenerator: /usr/local/lib/liblunasvg.a
 QR_CardGenerator: CMakeFiles/QR_CardGenerator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mateusz/Desktop/cpp/QRcardGenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable QR_CardGenerator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QR_CardGenerator.dir/link.txt --verbose=$(VERBOSE)

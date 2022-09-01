@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/mateusz/Desktop/cpp/QRcardGenerator/main.cpp
+stb_image_write.h
+/home/mateusz/Desktop/cpp/QRcardGenerator/stb_image_write.h
 iostream
 -
 filesystem
@@ -14,5 +16,21 @@ filesystem
 fstream
 -
 regex
+-
+lunasvg.h
+-
+sstream
+-
+
+/home/mateusz/Desktop/cpp/QRcardGenerator/stb_image_write.h
+stdarg.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+assert.h
 -
 
