@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 
 
 
-    std::string filename = "files/baseSVG/baseSVG.svg";
+    std::string filename = "files/baseSVG/moon.svg";
     std::uint32_t width = 512, height = 512;
     std::uint32_t bgColor = 0xff00ffff;
 
