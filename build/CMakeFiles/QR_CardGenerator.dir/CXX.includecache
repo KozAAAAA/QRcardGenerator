@@ -19,8 +19,6 @@ regex
 -
 lunasvg.h
 -
-sstream
--
 
 /home/mateusz/Desktop/cpp/QRcardGenerator/stb_image_write.h
 stdarg.h

@@ -1,3 +1,5 @@
+
+#define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
 #include <iostream>
@@ -6,7 +8,7 @@
 #include <regex>
 
 #include <lunasvg.h>
-#include <sstream>
+//#include <sstream>
 
 
 using namespace lunasvg;
@@ -62,8 +64,8 @@ int main(int argc, char *argv[])
 
 
     std::string filename = "files/baseSVG/baseSVG.svg";
-    std::uint32_t width = 5, height = 5;
-    std::uint32_t bgColor = 0x00000000;
+    std::uint32_t width = 512, height = 512;
+    std::uint32_t bgColor = 0xff00ffff;
 
     auto document = Document::loadFromFile(filename);
 

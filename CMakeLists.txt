@@ -8,9 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 include(CTest)
 enable_testing()
 
-set(SOURCES main.cpp stb_image_write.h)
-
-add_executable(QR_CardGenerator ${SOURCES})
+add_executable(QR_CardGenerator main.cpp stb_image_write.h jum.h)
 
 find_library(LUNA_SVG lunasvg lib)
 
