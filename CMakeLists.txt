@@ -8,11 +8,14 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 include(CTest)
 enable_testing()
 
-add_executable(QR_CardGenerator main.cpp stb_image_write.h jum.h)
+add_executable(QR_CardGenerator main.cpp)
+add_definitions( -DMAGICKCORE_QUANTUM_DEPTH=16 )
+add_definitions( -DMAGICKCORE_HDRI_ENABLE=0 )
+find_package(ImageMagick COMPONENTS Magick++)
+include_directories(${ImageMagick_INCLUDE_DIRS})
+target_link_libraries(QR_CardGenerator ${ImageMagick_LIBRARIES})
 
-find_library(LUNA_SVG lunasvg lib)
 
-target_link_libraries(QR_CardGenerator LINK_PUBLIC ${LUNA_SVG})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

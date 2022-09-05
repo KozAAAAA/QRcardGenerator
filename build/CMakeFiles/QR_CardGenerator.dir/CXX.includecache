@@ -6,29 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/mateusz/Desktop/cpp/QRcardGenerator/main.cpp
-stb_image_write.h
-/home/mateusz/Desktop/cpp/QRcardGenerator/stb_image_write.h
-iostream
--
-filesystem
--
-fstream
--
-regex
--
-lunasvg.h
--
-
-/home/mateusz/Desktop/cpp/QRcardGenerator/stb_image_write.h
-stdarg.h
--
-stdlib.h
--
-stdio.h
--
-string.h
--
-assert.h
--
-

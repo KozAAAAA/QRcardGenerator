@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_FLAGS = -g   -std=c++17
 
-CXX_DEFINES = 
+CXX_DEFINES = -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/local/include/ImageMagick-7 
 

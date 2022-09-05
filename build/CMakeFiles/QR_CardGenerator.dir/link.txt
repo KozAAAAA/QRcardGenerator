@@ -1,1 +1,1 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/QR_CardGenerator.dir/main.cpp.o  -o QR_CardGenerator  /usr/local/lib/liblunasvg.a 
+/usr/bin/g++  -g  -rdynamic CMakeFiles/QR_CardGenerator.dir/main.cpp.o  -o QR_CardGenerator  -Wl,-rpath,/usr/local/lib /usr/local/lib/libMagick++-7.Q16HDRI.so 

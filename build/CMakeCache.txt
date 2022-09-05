@@ -305,8 +305,41 @@ GITCOMMAND:FILEPATH=/usr/bin/git
 //Path to a program.
 HGCOMMAND:FILEPATH=HGCOMMAND-NOTFOUND
 
+//Path to the ImageMagick binary directory.
+IMAGEMAGICK_BINARY_PATH:PATH=/usr/local/bin
+
+//Path to ImageMagick's composite executable.
+IMAGEMAGICK_COMPOSITE_EXECUTABLE:FILEPATH=/usr/local/bin/composite
+
+//Path to ImageMagick's convert executable.
+IMAGEMAGICK_CONVERT_EXECUTABLE:FILEPATH=/usr/local/bin/convert
+
+//Path to ImageMagick's import executable.
+IMAGEMAGICK_IMPORT_EXECUTABLE:FILEPATH=/usr/local/bin/import
+
+//Path to ImageMagick's mogrify executable.
+IMAGEMAGICK_MOGRIFY_EXECUTABLE:FILEPATH=/usr/local/bin/mogrify
+
+//Path to ImageMagick's montage executable.
+IMAGEMAGICK_MONTAGE_EXECUTABLE:FILEPATH=/usr/local/bin/montage
+
+//Path to the ImageMagick binary directory.
+ImageMagick_EXECUTABLE_DIR:PATH=/usr/local/bin
+
+//Path to the ImageMagick arch-specific include dir.
+ImageMagick_Magick++_ARCH_INCLUDE_DIR:PATH=ImageMagick_Magick++_ARCH_INCLUDE_DIR-NOTFOUND
+
+//Path to the ImageMagick arch-independent include dir.
+ImageMagick_Magick++_INCLUDE_DIR:PATH=/usr/local/include/ImageMagick-7
+
+//Path to the ImageMagick Magick++ library.
+ImageMagick_Magick++_LIBRARY:FILEPATH=/usr/local/lib/libMagick++-7.Q16HDRI.so
+
 //Path to a library.
 LUNA_SVG:FILEPATH=/usr/local/lib/liblunasvg.a
+
+//Path to a library.
+MAGICLIB:FILEPATH=MAGICLIB-NOTFOUND
 
 //Command to build the project
 MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
@@ -319,6 +352,9 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Path to a program.
 P4COMMAND:FILEPATH=P4COMMAND-NOTFOUND
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Value Computed by CMake
 QR_CardGenerator_BINARY_DIR:STATIC=/home/mateusz/Desktop/cpp/QRcardGenerator/build
@@ -337,6 +373,15 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 
 //Path to a program.
 SVNCOMMAND:FILEPATH=SVNCOMMAND-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_PC_Magick++_Magick++-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagick++-7.Q16HDRI.so
+
+//Path to a library.
+pkgcfg_lib_PC_Magick++_MagickCore-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagickCore-7.Q16HDRI.so
+
+//Path to a library.
+pkgcfg_lib_PC_Magick++_MagickWand-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagickWand-7.Q16HDRI.so
 
 
 ########################
@@ -536,10 +581,24 @@ CVSCOMMAND-ADVANCED:INTERNAL=1
 CVS_UPDATE_OPTIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding ImageMagick
+FIND_PACKAGE_MESSAGE_DETAILS_ImageMagick:INTERNAL=[/usr/local/lib/libMagick++-7.Q16HDRI.so][v()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: HGCOMMAND
 HGCOMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: IMAGEMAGICK_BINARY_PATH
+IMAGEMAGICK_BINARY_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: IMAGEMAGICK_COMPOSITE_EXECUTABLE
+IMAGEMAGICK_COMPOSITE_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: IMAGEMAGICK_CONVERT_EXECUTABLE
+IMAGEMAGICK_CONVERT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: IMAGEMAGICK_IMPORT_EXECUTABLE
+IMAGEMAGICK_IMPORT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: IMAGEMAGICK_MOGRIFY_EXECUTABLE
+IMAGEMAGICK_MOGRIFY_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: IMAGEMAGICK_MONTAGE_EXECUTABLE
+IMAGEMAGICK_MONTAGE_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
@@ -548,6 +607,43 @@ MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: P4COMMAND
 P4COMMAND-ADVANCED:INTERNAL=1
+PC_Magick++_CFLAGS:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-I/usr/local/include/ImageMagick-7
+PC_Magick++_CFLAGS_I:INTERNAL=
+PC_Magick++_CFLAGS_OTHER:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16
+PC_Magick++_FOUND:INTERNAL=1
+PC_Magick++_INCLUDEDIR:INTERNAL=/usr/local/include/ImageMagick-7
+PC_Magick++_INCLUDE_DIRS:INTERNAL=/usr/local/include/ImageMagick-7
+PC_Magick++_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagick++-7.Q16HDRI;-lMagickWand-7.Q16HDRI;-lMagickCore-7.Q16HDRI
+PC_Magick++_LDFLAGS_OTHER:INTERNAL=
+PC_Magick++_LIBDIR:INTERNAL=/usr/local/lib
+PC_Magick++_LIBRARIES:INTERNAL=Magick++-7.Q16HDRI;MagickWand-7.Q16HDRI;MagickCore-7.Q16HDRI
+PC_Magick++_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+PC_Magick++_LIBS:INTERNAL=
+PC_Magick++_LIBS_L:INTERNAL=
+PC_Magick++_LIBS_OTHER:INTERNAL=
+PC_Magick++_LIBS_PATHS:INTERNAL=
+PC_Magick++_MODULE_NAME:INTERNAL=Magick++
+PC_Magick++_Magick++_INCLUDEDIR:INTERNAL=
+PC_Magick++_Magick++_LIBDIR:INTERNAL=
+PC_Magick++_Magick++_PREFIX:INTERNAL=
+PC_Magick++_Magick++_VERSION:INTERNAL=
+PC_Magick++_PREFIX:INTERNAL=/usr/local
+PC_Magick++_STATIC_CFLAGS:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-I/usr/local/include/ImageMagick-7
+PC_Magick++_STATIC_CFLAGS_I:INTERNAL=
+PC_Magick++_STATIC_CFLAGS_OTHER:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16
+PC_Magick++_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include/ImageMagick-7
+PC_Magick++_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagick++-7.Q16HDRI;-lm;-lMagickWand-7.Q16HDRI;-lX11;-lz;-lm;-lpthread;-lgomp;-lm;-lMagickCore-7.Q16HDRI;-lX11;-lz;-lm;-lpthread;-lgomp;-lm
+PC_Magick++_STATIC_LDFLAGS_OTHER:INTERNAL=
+PC_Magick++_STATIC_LIBDIR:INTERNAL=
+PC_Magick++_STATIC_LIBRARIES:INTERNAL=Magick++-7.Q16HDRI;m;MagickWand-7.Q16HDRI;X11;z;m;pthread;gomp;m;MagickCore-7.Q16HDRI;X11;z;m;pthread;gomp;m
+PC_Magick++_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+PC_Magick++_STATIC_LIBS:INTERNAL=
+PC_Magick++_STATIC_LIBS_L:INTERNAL=
+PC_Magick++_STATIC_LIBS_OTHER:INTERNAL=
+PC_Magick++_STATIC_LIBS_PATHS:INTERNAL=
+PC_Magick++_VERSION:INTERNAL=7.1.0
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SLURM_SBATCH_COMMAND
@@ -556,4 +652,13 @@ SLURM_SBATCH_COMMAND-ADVANCED:INTERNAL=1
 SLURM_SRUN_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SVNCOMMAND
 SVNCOMMAND-ADVANCED:INTERNAL=1
+__pkg_config_arguments_PC_Magick++:INTERNAL=QUIET;Magick++
+__pkg_config_checked_PC_Magick++:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_Magick++_Magick++-7.Q16HDRI
+pkgcfg_lib_PC_Magick++_Magick++-7.Q16HDRI-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_Magick++_MagickCore-7.Q16HDRI
+pkgcfg_lib_PC_Magick++_MagickCore-7.Q16HDRI-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_Magick++_MagickWand-7.Q16HDRI
+pkgcfg_lib_PC_Magick++_MagickWand-7.Q16HDRI-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/local/lib
 
