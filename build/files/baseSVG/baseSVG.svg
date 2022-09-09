@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,8 +43,8 @@
      id="namedview10897"
      showgrid="false"
      inkscape:zoom="0.37378686"
-     inkscape:cx="1314.252"
-     inkscape:cy="558.23862"
+     inkscape:cx="1268.339"
+     inkscape:cy="598.82436"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -57,19 +57,19 @@
   <image
      sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/baseSVG/../backimage/backimage.jpg"
      xlink:href="../backimage/backimage.jpg"
-     id="image10883"
-     height="1187.3503"
-     width="1800"
+     x="0"
      y="0"
-     x="0" />
+     width="1800"
+     height="1187.3503"
+     id="image10883" />
   <image
      sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/baseSVG/../QRcodes/Name_Here.svg"
      xlink:href="../QRcodes/Name_Here.svg"
-     id="image10885"
-     height="422.89169"
-     width="422.89169"
+     x="1260.0006"
      y="558.05664"
-     x="1260.0006" />
+     width="422.89169"
+     height="422.89169"
+     id="image10885" />
   <flowRoot
      xml:space="preserve"
      id="flowRoot845"
@@ -84,4 +84,25 @@
          y="22.259256"
          style="font-size:16px;text-align:start;text-anchor:start" /></flowRegion><flowPara
        id="flowPara851"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.33333397px;font-family:'Grundfos TheSans V2 OT 8XB';-inkscape-font-specification:'Grundfos TheSans V2 OT 8XB';text-align:start;writing-mode:lr-tb;text-anchor:start">Name_Here</flowPara></flowRoot></svg>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.33333397px;font-family:'Grundfos TheSans V2 OT 8XB';-inkscape-font-specification:'Grundfos TheSans V2 OT 8XB';text-align:start;writing-mode:lr-tb;text-anchor:start">Name_Here</flowPara></flowRoot>  <rect
+     style="fill:#ffffff;fill-opacity:0"
+     id="rect828"
+     width="1819.098"
+     height="71.092186"
+     x="0"
+     y="0" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.72777563"
+     id="rect830"
+     width="1800"
+     height="74.908989"
+     x="0"
+     y="0" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.72777563"
+     id="rect830-3"
+     width="1800"
+     height="74.908989"
+     x="1.5258789e-05"
+     y="1112.4414" />
+</svg>
