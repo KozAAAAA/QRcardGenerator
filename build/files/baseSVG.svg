@@ -43,8 +43,8 @@
      id="namedview10897"
      showgrid="false"
      inkscape:zoom="0.37378686"
-     inkscape:cx="1268.339"
-     inkscape:cy="598.82436"
+     inkscape:cx="788.1188"
+     inkscape:cy="588.12307"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -55,21 +55,21 @@
      fit-margin-right="0"
      fit-margin-bottom="0" />
   <image
-     sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/baseSVG/../backimage/backimage.jpg"
-     xlink:href="../backimage/backimage.jpg"
-     x="0"
-     y="0"
-     width="1800"
+     sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/backimage/backimage.jpg"
+     xlink:href="backimage/backimage.jpg"
+     id="image10883"
      height="1187.3503"
-     id="image10883" />
+     width="1800"
+     y="0"
+     x="0" />
   <image
-     sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/baseSVG/../QRcodes/Name_Here.svg"
-     xlink:href="../QRcodes/Name_Here.svg"
-     x="1260.0006"
-     y="558.05664"
-     width="422.89169"
+     sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/QRcodes/Name_Here.svg"
+     xlink:href="QRcodes/Name_Here.svg"
+     id="image10885"
      height="422.89169"
-     id="image10885" />
+     width="422.89169"
+     y="558.05664"
+     x="1260.0006" />
   <flowRoot
      xml:space="preserve"
      id="flowRoot845"

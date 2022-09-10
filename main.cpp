@@ -3,6 +3,8 @@
 #include <fstream>
 #include <regex>
 
+    #include <unistd.h>
+
 #include <Magick++.h>
 
 
@@ -10,12 +12,14 @@ namespace fs = std::filesystem;
 
 int main(int argc, char *argv[])
 {
+
+    Magick::InitializeMagick(*argv);
     
     const fs::path QRcodes{"files/QRcodes"};
     const fs::path finalFiles{"files/finalFiles"};
     const fs::path baseSVG{"files/baseSVG/baseSVG.svg"};
 
-    uint64_t numCreatedFiles{0};
+    uint64_t numCreatedFiles = 0;
 
     for (auto &path : fs::directory_iterator(finalFiles))
     {
@@ -52,6 +56,17 @@ int main(int argc, char *argv[])
 
     std::cout << "\033[1;32mDone\033[0m\n";
     std::cout << "Created " << numCreatedFiles << " files.\n";
+
+    
+
+    Magick::Image image("files/baseSVG.svg");
+    image.write("Adam Dubiel.png");
+
+    // Magick::Image image( "176x144", "white" );
+    // image.write("1.png");
+    
+    //img.read("Adam Dubiel.svg");
+    //img.write("files/baseSVG/baseSVG.png");
 
 
 

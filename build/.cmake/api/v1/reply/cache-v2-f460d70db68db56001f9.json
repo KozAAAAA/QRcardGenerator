@@ -1799,7 +1799,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/local/lib/libMagick++-7.Q16HDRI.so][v()]"
+			"value" : "[/usr/local/lib/libMagick++-7.Q16HDRI.so][v7.1.0-48()]"
 		},
 		{
 			"name" : "GITCOMMAND",
