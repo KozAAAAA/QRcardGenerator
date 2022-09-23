@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
 
     
 
-    Magick::Image image("files/baseSVG.svg");
-    image.write("Adam Dubiel.png");
+    //Magick::Image image("files/baseSVG.svg");
+    //image.write("Adam Dubiel.png");
 
     // Magick::Image image( "176x144", "white" );
     // image.write("1.png");
