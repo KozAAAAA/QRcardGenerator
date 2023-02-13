@@ -3,7 +3,7 @@
 #include <fstream>
 #include <regex>
 
-    #include <unistd.h>
+#include <unistd.h>
 
 #include <Magick++.h>
 
