@@ -43,8 +43,8 @@
      id="namedview10897"
      showgrid="false"
      inkscape:zoom="0.37378686"
-     inkscape:cx="1018.3786"
-     inkscape:cy="650.78531"
+     inkscape:cx="520.76881"
+     inkscape:cy="640.08402"
      inkscape:window-x="0"
      inkscape:window-y="1107"
      inkscape:window-maximized="1"
@@ -57,11 +57,11 @@
   <image
      sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/baseSVG/../backimage/backimage.jpg"
      xlink:href="../backimage/backimage.jpg"
-     x="0"
-     y="0"
-     width="1800"
+     id="image10883"
      height="1187.3503"
-     id="image10883" />
+     width="1800"
+     y="0"
+     x="0" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:86.74698639px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.42168665"
@@ -80,9 +80,29 @@
   <image
      sodipodi:absref="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/baseSVG/../QRcodes/Name_Here.svg"
      xlink:href="../QRcodes/Name_Here.svg"
-     id="image10885"
-     height="422.89169"
-     width="422.89169"
+     x="1260.0006"
      y="558.05664"
-     x="1260.0006" />
+     width="422.89169"
+     height="422.89169"
+     id="image10885" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.72777563"
+     id="rect830-3-7"
+     width="1800"
+     height="74.908989"
+     x="0"
+     y="0"
+     inkscape:export-filename="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/png/wwa.png"
+     inkscape:export-xdpi="122.92"
+     inkscape:export-ydpi="122.92" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.72777563"
+     id="rect830-3-7-3"
+     width="1800"
+     height="74.908989"
+     x="0"
+     y="1112.4414"
+     inkscape:export-filename="/home/mateusz/Desktop/cpp/QRcardGenerator/build/files/png/wwa.png"
+     inkscape:export-xdpi="122.92"
+     inkscape:export-ydpi="122.92" />
 </svg>
